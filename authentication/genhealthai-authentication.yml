@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.genhealth.ai/docs/getting-started-1
+docs: https://docs.genhealth.ai/docs/getting-started-1
+summary:
+  types: [http]
+  http_schemes: [bearer]
+  oauth2_flows: []
+  api_key_in: []
+  notes: >-
+    GenHealth API requests authenticate with an HTTP Bearer token (an API key issued in the developer
+    hub and sent in the Authorization header). The ReadMe developer hub declares a single security
+    scheme "HTTPBearer" (type: http, scheme: bearer) and explicitly no OAuth (oauth type: none).
+schemes:
+  - name: HTTPBearer
+    type: http
+    scheme: bearer
+    description: API key passed as a Bearer token in the Authorization request header.
+    sources:
+      - https://docs.genhealth.ai/docs/getting-started-1
+oauth:
+  present: false
+  evidence: developer-hub metadata declares oauth type "none"
