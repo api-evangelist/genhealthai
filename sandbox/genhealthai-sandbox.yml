@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://umpa.genhealth.ai
+docs: https://docs.genhealth.ai/docs/getting-started-1
+summary: >-
+  GenHealth publishes a free, self-service sandbox for its UM/PA (Utilization Management / Prior
+  Authorization) product at https://umpa.genhealth.ai. A free account can be created with no credit
+  card required, giving developers a live environment to upload, process, extract, and adjudicate
+  prior-authorization PDFs and to test the API.
+sandbox:
+  url: https://umpa.genhealth.ai
+  free: true
+  credit_card_required: false
+  auth: HTTP Bearer API key issued in the developer hub
+  scope: UM/PA prior-authorization document processing and adjudication
+test_values:
+  note: >-
+    GenHealth does not publish fixed "magic" test identifiers, test cards, or synthetic PHI fixtures in
+    its public docs. The published testing guidance for its Claude Code healthcare skills instructs
+    users to supply their own synthetic samples only and never to paste real PHI without a signed BAA.
+    No test values are invented here.

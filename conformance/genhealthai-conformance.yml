@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.genhealth.ai/docs/integration-with-hl7-davinci-fhir-apis
+standards:
+  - id: hl7-davinci-crd
+    name: HL7 Da Vinci Coverage Requirements Discovery (CRD)
+    conforms: true
+    evidence: >-
+      Docs state real-time querying of payer systems for coverage requirements and automatic
+      identification of services requiring prior authorization.
+  - id: hl7-davinci-dtr
+    name: HL7 Da Vinci Documentation Templates and Rules (DTR)
+    conforms: true
+    evidence: >-
+      Docs describe dynamic, context-sensitive FHIR questionnaires tailored to specific procedures and
+      payer requirements.
+  - id: hl7-davinci-pas
+    name: HL7 Da Vinci Prior Authorization Support (PAS)
+    conforms: true
+    evidence: Docs describe electronic submission and real-time adjudication of prior-auth requests.
+  - id: fhir
+    name: HL7 FHIR
+    conforms: true
+    evidence: >-
+      GenHealth integrates with any FHIR server implementing the HL7 Da Vinci specification for prior
+      authorization; acts as a payer interface returning information to the FHIR API.
+  - id: cql
+    name: Clinical Quality Language (CQL)
+    conforms: true
+    evidence: Docs note CQL as an output option for coverage rules.
+  - id: soc2
+    name: AICPA SOC 2
+    conforms: true
+    evidence: genhealth.ai footer + trust center (trust.genhealth.ai) advertise AICPA SOC 2.
+  - id: hipaa
+    name: HIPAA
+    conforms: true
+    evidence: >-
+      genhealth.ai states HIPAA compliance; offers Business Associate Agreement (BAA); trust center at
+      trust.genhealth.ai.
+  - id: oauth2
+    conforms: false
+    evidence: API uses HTTP Bearer (API key), oauth declared "none".
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No public error reference documenting application/problem+json.

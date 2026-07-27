@@ -1,0 +1,61 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.genhealth.ai/docs/release-notes
+scheme: dated
+current_version: v1
+tracks: [UMPA, G-mode, Platform/API]
+entries:
+  - date: '2025-04-16'
+    track: UMPA
+    highlights: Non-Clinical Policy feature release.
+  - date: '2025-04-04'
+    track: UMPA
+    highlights: Public release.
+  - date: '2025-02-18'
+    track: UMPA
+    highlights: Frontend updates.
+  - date: '2025-02-17'
+    track: UMPA
+    highlights: User invitations, PDF tool updates.
+  - date: '2025-02-12'
+    track: UMPA
+    highlights: Enhanced Document Chat.
+  - date: '2025-02-11'
+    track: UMPA
+    highlights: Agent sidebar, document classification updates, prior auth updates.
+  - date: '2025-02-10'
+    track: UMPA
+    highlights: Electronic Prior Auth (ePA) and CPAP note-driven processing updates.
+  - date: '2025-02-05'
+    track: UMPA
+    highlights: CPAP order automation and OCR improvements.
+  - date: '2025-01-28'
+    track: UMPA
+    highlights: Automated order dispatch updates.
+  - date: '2025-01-20'
+    track: UMPA
+    highlights: Inbox routing updates.
+  - date: '2025-03-15'
+    track: G-mode
+    highlights: Public computer-use feature.
+  - date: '2024-10-12'
+    track: G-mode
+    highlights: Public release.
+  - date: '2024-04-29'
+    track: Platform/API
+    highlights: Code-to-policy API lookup.
+  - date: '2024-01-12'
+    track: Platform/API
+    highlights: Release Diagnosis and CPT Code pages.
+  - date: '2023-12-15'
+    track: Platform/API
+    highlights: Release Policy pages.
+  - date: '2023-10-26'
+    track: Platform/API
+    highlights: Enable rate limiting in V1 API.
+  - date: '2023-09-15'
+    track: Platform/API
+    highlights: History Builder colored tags for different code sets.
+notes: >-
+  Recent window captured from the live release-notes page; the page is the source of truth for full
+  history. Dates normalized from the page's M/D/YY format to ISO.

@@ -1,21 +1,49 @@
 aid: genhealthai
 name: GenHealth.ai
-description: 'GenHealth.ai is a company surfaced as a portfolio company of craft-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'GenHealth.ai builds generative AI for healthcare operations, powered by a Large Medical
+  Model (LMM) trained on sequences of medical events. Its products automate the administrative back
+  office for providers, health plans, and DME suppliers: fax intake routing, prior authorization and
+  medical-necessity review (UMPA), and revenue cycle management. The developer platform exposes an
+  Inference API that generates simulated patient futures from demographic, ICD diagnosis, CPT/HCPCS
+  procedure, and NDC medication codes, an Embeddings API for semantic search over medical sequences,
+  and a UM/PA API that uploads, extracts, and adjudicates prior-authorization PDFs. GenHealth integrates
+  with any FHIR server implementing the HL7 Da Vinci prior-authorization guides (CRD, DTR, PAS). The
+  platform is SOC 2 and HIPAA compliant with a public trust center and status page.'
 url: https://raw.githubusercontent.com/api-evangelist/genhealthai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - craft-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://genhealth.ai/apple-touch-icon.png
 tags:
 - Company
 - Health
+- Healthcare
+- Artificial Intelligence
+- Generative AI
+- Prior Authorization
+- Revenue Cycle Management
+- FHIR
+- HL7 Da Vinci
+- Medical Coding
+- Utilization Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,54 @@ maintainers:
 common:
 - type: Website
   url: https://genhealth.ai
+- type: DeveloperPortal
+  url: https://docs.genhealth.ai
+- type: Documentation
+  url: https://docs.genhealth.ai
+- type: APIReference
+  url: https://docs.genhealth.ai/docs/prior-authorization-automation
+- type: GettingStarted
+  url: https://docs.genhealth.ai/docs/getting-started-1
+- type: Support
+  url: mailto:support@genhealth.ai
+- type: Blog
+  url: https://genhealth.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/genhealth
+- type: SignUp
+  url: https://umpa.genhealth.ai
+- type: TermsOfService
+  url: https://genhealth.ai/terms
+- type: PrivacyPolicy
+  url: https://genhealth.ai/privacy
+- type: TrustCenter
+  url: https://trust.genhealth.ai
+- type: StatusPage
+  url: https://status.genhealth.ai
+- type: Compliance
+  url: https://trust.genhealth.ai
+- type: LLMsTxt
+  url: llms/genhealthai-llms.txt
+- type: MCPServer
+  url: mcp/genhealthai-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Authentication
+  url: authentication/genhealthai-authentication.yml
+- type: Conformance
+  url: conformance/genhealthai-conformance.yml
+- type: Sandbox
+  url: sandbox/genhealthai-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/genhealthai-lifecycle.yml
+- type: ChangeLog
+  url: changelog/genhealthai-changelog.yml
+- type: Conventions
+  url: conventions/genhealthai-conventions.yml
+- type: DomainSecurity
+  url: security/genhealthai-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

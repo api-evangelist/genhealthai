@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/genhealth/claude-code-healthcare-skills
+description: >-
+  Three production-ready Claude Code Agent Skills published by GenHealth for DME and provider
+  back-office workflows: fax intake routing, prior-auth review + medical-necessity drafting, and
+  outbound response drafting. Saved verbatim from the provider's public GitHub repo.
+skills:
+  - file: genhealthai-fax-intake-routing.md
+    name: fax-intake-routing
+    description: Classify and structure an incoming healthcare fax into a routable work-queue ticket.
+    source: https://github.com/genhealth/claude-code-healthcare-skills/blob/main/fax-intake-routing/SKILL.md
+  - file: genhealthai-prior-auth-drafting.md
+    name: prior-auth-drafting
+    description: Review a prior-auth case against payer LCD/coverage policy, issue a SUBMIT / NEEDS DOCS / DON'T SUBMIT verdict, then conditionally draft the medical-necessity narrative.
+    source: https://github.com/genhealth/claude-code-healthcare-skills/blob/main/prior-auth-drafting/SKILL.md
+  - file: genhealthai-draft-response.md
+    name: draft-response
+    description: Draft a GenHealth-styled PDF response letter to a referring physician or a health plan (documentation request, appeal, submission cover, or coverage inquiry).
+    source: https://github.com/genhealth/claude-code-healthcare-skills/blob/main/draft-response/SKILL.md

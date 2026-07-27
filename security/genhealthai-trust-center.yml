@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: searched
+source: https://genhealth.ai
+url: https://trust.genhealth.ai
+certifications:
+  - SOC 2
+  - HIPAA
+evidence:
+  - source: https://genhealth.ai
+    detail: Footer advertises "AICPA SOC 2" and "HIPAA compliant" and links a Business Associate Agreement (BAA) and Security Policy.
+  - source: https://trust.genhealth.ai
+    detail: Public trust center (HTTP 200). Rendered as a SafeBase-style single-page app; certification names above are taken from the verified genhealth.ai footer claims, not scraped from the SPA shell.
+notes: >-
+  Trust center reachable at trust.genhealth.ai. GenHealth offers a Business Associate Agreement (BAA)
+  for HIPAA-covered use. No bug-bounty or /.well-known/security.txt was found (probed, all 404).

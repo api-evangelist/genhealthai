@@ -1,0 +1,7 @@
+# GenHealth.ai Documentation
+
+> GenHealth's API provides access to predictive analytics API's for healthcare
+
+## Guides
+- [FHIR API: HL7 DaVinci](https://docs.genhealth.ai/docs/integration-with-hl7-davinci-fhir-apis.md): GenHealth is able to seamlessly integrate with any FHIR server implementing the HL7 DaVinci specification for prior authorization
+- [Release Notes](https://docs.genhealth.ai/docs/release-notes.md)

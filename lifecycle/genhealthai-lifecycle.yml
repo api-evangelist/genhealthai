@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.genhealth.ai/docs/release-notes
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: >-
+    Release notes reference the "V1 API" (e.g. 10/26/23 "Enable rate limiting in V1 API"); the API is
+    versioned in the URI path.
+  release_notes: https://docs.genhealth.ai/docs/release-notes
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation policy or RFC 8594 Sunset/Deprecation header support was found.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.genhealth.ai
+rate_limiting:
+  present: true
+  evidence: Release note 10/26/23 "Enable rate limiting in V1 API".
+deprecated_operations: []

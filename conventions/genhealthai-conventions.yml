@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.genhealth.ai/docs/getting-started-1
+authentication:
+  style: HTTP Bearer token (API key in Authorization header)
+  ref: authentication/genhealthai-authentication.yml
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/genhealthai-lifecycle.yml
+rate_limiting:
+  signaled: true
+  note: >-
+    Rate limiting is enabled on the V1 API (per release notes). Specific limit headers/values are not
+    published in public docs.
+idempotency:
+  supported: false
+  note: No idempotency-key header or contract is documented in the public docs; not asserting one.
+pagination:
+  style: unknown
+  note: Not documented in public docs.
+error_envelope:
+  format: unknown
+  note: No public error reference; RFC 9457 problem+json not confirmed.
+data_model:
+  domain: >-
+    Healthcare medical events expressed as code sequences — demographics, ICD-10 diagnosis codes,
+    CPT/HCPCS procedure codes, NDC medication codes, and time-gap tokens. FHIR resources exchanged via
+    the HL7 Da Vinci prior-authorization guides (CRD/DTR/PAS).
+cross_links:
+  authentication: authentication/genhealthai-authentication.yml
+  lifecycle: lifecycle/genhealthai-lifecycle.yml
+  conformance: conformance/genhealthai-conformance.yml
