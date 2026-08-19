@@ -6,23 +6,27 @@ server:
   name: genhealth-docs
   transport: http
   url: https://docs.genhealth.ai/mcp
-  authentication: required   # JSON-RPC initialize returns -32001 "Authorization required" (HTTP 401)
+  authentication: required
   provider: ReadMe (developer-hub generated MCP server; docs page advertises mcp_server_card + webmcp)
-notes: >-
-  GenHealth publishes a hosted, remote MCP server at https://docs.genhealth.ai/mcp. A GET returns 200
-  and JSON-RPC POST is accepted; unauthenticated initialize / tools/list calls return
-  {"code":-32001,"message":"Authorization required"}. The server is the ReadMe developer-hub MCP that
-  exposes the GenHealth documentation and API reference as tools (endpoint discovery + request
-  execution) once a valid bearer token is supplied. Tool list below is the observed ReadMe MCP surface,
-  not a hand-audited enumeration.
+notes: GenHealth publishes a hosted, remote MCP server at https://docs.genhealth.ai/mcp. A GET returns
+  200 and JSON-RPC POST is accepted; unauthenticated initialize / tools/list calls return {"code":-32001,"message":"Authorization
+  required"}. The server is the ReadMe developer-hub MCP that exposes the GenHealth documentation and
+  API reference as tools (endpoint discovery + request execution) once a valid bearer token is supplied.
+  Tool list below is the observed ReadMe MCP surface, not a hand-audited enumeration.
 tools:
-  - name: search
-    description: Search the GenHealth documentation and API reference.
-  - name: list-endpoints
-    description: List available API endpoints from the reference.
-  - name: get-endpoint
-    description: Retrieve the details of a single API endpoint.
-  - name: get-server-variables
-    description: Retrieve server/base-URL variables for the API.
-  - name: execute-request
-    description: Execute an authenticated request against a GenHealth API endpoint.
+- name: search
+  description: Search the GenHealth documentation and API reference.
+- name: list-endpoints
+  description: List available API endpoints from the reference.
+- name: get-endpoint
+  description: Retrieve the details of a single API endpoint.
+- name: get-server-variables
+  description: Retrieve server/base-URL variables for the API.
+- name: execute-request
+  description: Execute an authenticated request against a GenHealth API endpoint.
+deployment:
+  mode: remote
+  verified: searched
+  tools: 5
+  checked: '2026-08-12'
+  source: catalog MCP census
