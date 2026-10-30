@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-GenHealth.ai is a company surfaced as a portfolio company of craft-ventures and added to the API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting the enrichment pipeline.
+GenHealth.ai builds generative AI for healthcare operations, powered by a Large Medical Model (LMM) trained on sequences of medical events. Its products automate the administrative back office for providers, health plans, and DME suppliers: fax intake routing, prior authorization and medical-necessity review (UMPA), and revenue cycle management. The developer platform exposes an Inference API that generates simulated patient futures from demographic, ICD diagnosis, CPT/HCPCS procedure, and NDC medication codes, an Embeddings API for semantic search over medical sequences, and a UM/PA API that uploads, extracts, and adjudicates prior-authorization PDFs. GenHealth integrates with any FHIR server implementing the HL7 Da Vinci prior-authorization guides (CRD, DTR, PAS). The platform is SOC 2 and HIPAA compliant with a public trust center and status page.
 
-Backed by: craft-ventures — https://genhealth.ai
+**Areas:** Company · Health · Healthcare · Artificial Intelligence · Generative AI · Prior Authorization · Revenue Cycle Management · FHIR · HL7 Da Vinci · Medical Coding · Utilization Management
+
+## GenHealth.ai on APIs.io
+
+Everything profiled for GenHealth.ai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/genhealthai/](https://apis.io/providers/genhealthai/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [genhealth-docs](https://apis.io/servers/genhealthai/genhealth-docs/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Genhealthai Authentication](https://apis.io/security/genhealthai/genhealthai-authentication/)
+- [Genhealthai Domain Security](https://apis.io/security/genhealthai/genhealthai-domain-security/)
+- [Genhealthai Trust Center](https://apis.io/security/genhealthai/genhealthai-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://genhealth.ai)
+- [Documentation](https://docs.genhealth.ai)
+- [Getting started](https://docs.genhealth.ai/docs/getting-started-1)
+- [API reference](https://docs.genhealth.ai/docs/prior-authorization-automation)
+- [Sign up](https://umpa.genhealth.ai)
+- [Blog](https://genhealth.ai/blog)
+- [Compliance](https://trust.genhealth.ai)
+- [Trust centre](https://trust.genhealth.ai)
+- [Terms of service](https://genhealth.ai/terms)
+- [Privacy policy](https://genhealth.ai/privacy)
+- [GitHub](https://github.com/genhealth)
+- [Status](https://status.genhealth.ai)
+
+## API Evangelist rating
+
+**Kin Score 28.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 27.6 |
+
+**Agent readiness 9.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/genhealthai/](https://apis.io/providers/genhealthai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for GenHealth.ai: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/genhealthai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
